@@ -155,7 +155,7 @@ if (acc_count==0){
 	OCR0A = 255;	//0xfb; // 191 is an arbitrary value showing that we load a number between 0-255 into OCR0A
 	wait(8000,2);
 	OCR0A = 0;
-	PORTC = 0b00000000;
+	#PORTC = 0b00000000; //added to reduce power, but change did not work not sure why
 }
 else
 {
